@@ -24,7 +24,7 @@ body {
     color: #ffffff;
     min-height: 100vh;
     background:
-        linear-gradient(rgba(6, 16, 38, 0.34), rgba(6, 16, 38, 0.34)),
+        linear-gradient(rgba(6, 16, 38, 0.30), rgba(6, 16, 38, 0.30)),
         url('network-wallpaper-clean.png');
     background-size: cover;
     background-position: center;
@@ -58,7 +58,7 @@ body {
 
 .tagline {
     max-width: 700px;
-    margin: 4px auto 78px auto;
+    margin: 4px auto 110px auto;
     color: #ffffff;
     text-align: center;
     font-size: 1.31rem;
@@ -73,7 +73,7 @@ body {
     border-radius: 24px;
     color: #ffffff;
     background:
-        linear-gradient(rgba(8, 24, 74, 0.78), rgba(8, 24, 74, 0.78)),
+        linear-gradient(rgba(8, 24, 74, 0.72), rgba(8, 24, 74, 0.72)),
         linear-gradient(135deg, rgba(22, 35, 61, 0.20) 0%, rgba(15, 23, 42, 0.10) 55%, rgba(19, 32, 58, 0.20) 100%);
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow:
@@ -83,12 +83,12 @@ body {
 }
 
 .about {
-    margin-top: 68px;
+    margin-top: 115px;
     padding: 20px 32px 18px 32px;
 }
 
 .contact {
-    margin-top: 54px;
+    margin-top: 34px;
     padding: 20px 32px 22px 32px;
     text-align: center;
 }
@@ -189,7 +189,7 @@ a:active {
     .tagline {
         font-size: 1.14rem;
         line-height: 1.2;
-        margin: 2px auto 54px auto;
+        margin: 2px auto 84px auto;
     }
 
     .section {
@@ -197,12 +197,12 @@ a:active {
     }
 
     .about {
-        margin-top: 44px;
+        margin-top: 88px;
         padding: 18px 18px 16px 18px;
     }
 
     .contact {
-        margin-top: 40px;
+        margin-top: 28px;
         padding: 18px 18px 20px 18px;
     }
 
