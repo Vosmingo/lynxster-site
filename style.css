@@ -23,18 +23,22 @@ body {
     font-size: 18px;
     color: #ffffff;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    padding: 52px 20px 90px 20px;
     background:
-        linear-gradient(rgba(6, 16, 38, 0.64), rgba(6, 16, 38, 0.64)),
+        linear-gradient(rgba(6, 16, 38, 0.58), rgba(6, 16, 38, 0.58)),
         url('network-wallpaper-clean.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.page-shell {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 52px 20px;
 }
 
 .container {
@@ -43,7 +47,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .logo {
@@ -54,94 +57,99 @@ body {
 }
 
 .tagline {
-    font-size: 1.31rem;
-    line-height: 1.24;
-    letter-spacing: 0.04em;
+    max-width: 680px;
+    margin: 4px auto 74px auto;
     color: #ffffff;
     text-align: center;
-    max-width: 640px;
-    margin: 4px auto 76px auto;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+    font-size: 1.31rem;
+    line-height: 1.22;
+    letter-spacing: 0.035em;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.45);
 }
 
 .section {
     width: 100%;
     max-width: 760px;
-    margin: 0 auto;
-    padding: 20px 22px;
-    border-radius: 22px;
-    text-align: center;
+    border-radius: 24px;
     color: #ffffff;
     background:
-        linear-gradient(rgba(8, 24, 74, 0.84), rgba(8, 24, 74, 0.84)),
-        linear-gradient(135deg, rgba(22, 35, 61, 0.35) 0%, rgba(15, 23, 42, 0.20) 55%, rgba(19, 32, 58, 0.35) 100%);
+        linear-gradient(rgba(8, 24, 74, 0.82), rgba(8, 24, 74, 0.82)),
+        linear-gradient(135deg, rgba(22, 35, 61, 0.25) 0%, rgba(15, 23, 42, 0.15) 55%, rgba(19, 32, 58, 0.25) 100%);
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.30),
+        0 10px 30px rgba(0, 0, 0, 0.28),
         inset 0 1px 0 rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(1px);
 }
 
-.section.about {
-    margin-top: 70px;
-    padding-bottom: 16px;
+.about {
+    margin-top: 68px;
+    padding: 20px 28px 18px 28px;
 }
 
-.section + .section {
-    margin-top: 56px;
+.contact {
+    margin-top: 54px;
+    padding: 20px 28px 22px 28px;
 }
 
 .section h2 {
-    font-size: 1.38rem;
     margin-bottom: 12px;
     color: #ffffff;
     text-align: center;
-    letter-spacing: 0.05em;
+    font-size: 1.42rem;
+    letter-spacing: 0.04em;
 }
 
 .section p {
-    font-size: 1.13rem;
-    line-height: 1.34;
     color: #ffffff;
-    text-align: center;
-    max-width: 620px;
+    font-size: 1.08rem;
+    line-height: 1.38;
     margin: 0 auto;
 }
 
 .about p {
-    max-width: 690px;
+    max-width: 700px;
     text-align: justify;
     text-justify: inter-word;
     text-align-last: left;
-    letter-spacing: 0.018em;
-    margin: 0 auto;
+    hyphens: none;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    word-break: normal;
+    overflow-wrap: normal;
+    letter-spacing: 0.012em;
 }
 
 .contact-info {
-    margin-top: 0;
+    margin-top: 2px;
     margin-bottom: 0;
-    color: #ffffff;
     text-align: center;
 }
 
 .contact-info p {
-    font-size: 1.13rem;
-    line-height: 1.08;
-    color: #ffffff;
     text-align: center;
-    letter-spacing: 0.01em;
-    margin: 0 auto;
+    font-size: 1.12rem;
+    line-height: 1.1;
+}
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 .contact-button {
     display: inline-block;
     margin-top: 18px;
-    padding: 11px 22px;
+    padding: 12px 24px;
     border-radius: 999px;
     background: #2563eb;
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.07rem;
+    font-size: 1.05rem;
     letter-spacing: 0.03em;
     transition: background 0.2s ease, transform 0.2s ease;
 }
@@ -149,11 +157,6 @@ body {
 .contact-button:hover {
     background: #3b82f6;
     transform: translateY(-1px);
-}
-
-.contact-button:visited,
-.contact-button:active {
-    color: #ffffff;
 }
 
 a {
@@ -168,9 +171,12 @@ a:active {
 
 @media (max-width: 768px) {
     body {
-        padding: 40px 16px 60px 16px;
         font-size: 17px;
         background-attachment: scroll;
+    }
+
+    .page-shell {
+        padding: 40px 16px 52px 16px;
     }
 
     .logo {
@@ -179,23 +185,19 @@ a:active {
     }
 
     .tagline {
-        font-size: 1.16rem;
-        line-height: 1.22;
+        font-size: 1.14rem;
+        line-height: 1.2;
         margin: 2px auto 54px auto;
     }
 
-    .section {
-        max-width: 100%;
-        padding: 18px 18px;
-    }
-
-    .section.about {
+    .about {
         margin-top: 44px;
-        padding-bottom: 14px;
+        padding: 18px 18px 16px 18px;
     }
 
-    .section + .section {
-        margin-top: 42px;
+    .contact {
+        margin-top: 40px;
+        padding: 18px 18px 20px 18px;
     }
 
     .section h2 {
@@ -203,22 +205,22 @@ a:active {
     }
 
     .section p {
-        font-size: 1.02rem;
-        line-height: 1.30;
+        font-size: 1rem;
+        line-height: 1.32;
     }
 
     .about p {
         max-width: 100%;
-        letter-spacing: 0.01em;
+        letter-spacing: 0.008em;
     }
 
     .contact-info p {
-        font-size: 1.02rem;
-        line-height: 1.06;
+        font-size: 1rem;
+        line-height: 1.08;
     }
 
     .contact-button {
-        font-size: 1rem;
+        font-size: 0.98rem;
         margin-top: 16px;
     }
 }
